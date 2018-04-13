@@ -8,15 +8,6 @@ public class SpringApplet extends JApplet{
     @Override
     public void init() {
 
-    }
-
-    @Override
-    public void paint(Graphics g) {
-
-    }
-
-    public static void main(String[] args) {
-
         //1 stworzone wektory
         Vector2D wektor1 = new Vector2D(10f, 5f);
         Vector2D wektor2 = new Vector2D(20f, 14f);
@@ -46,8 +37,9 @@ public class SpringApplet extends JApplet{
         System.out.println("Suma wektorow = (x: " + wektor3.x + ", y: " + wektor3.y + ")");
         System.out.println("Roznica wektorow = (x: " + wektor4.x + ", y: " + wektor4.y + ")");
         System.out.println("Iloczyn wektorow = (x: " + zmienna1.x + ", y: " + zmienna1.y + ")");
-
-
+    }
+    @Override
+    public void paint(Graphics g) {
 
     }
-}
+    }
